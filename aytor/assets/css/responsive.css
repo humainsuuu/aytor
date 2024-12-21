@@ -1,0 +1,402 @@
+
+/*===============================>
+#responsive part start
+===============================>*/
+
+/*<========= header section start ===========>*/
+/*<=========navbar start===========>*/
+@media screen and (max-width:1199px) {
+    header  #navbar  {
+        padding: 18px 0;
+        overflow: visible;
+    }
+     #navbar .list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.452);
+        transition: 0.5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 999999;
+    }
+     #navbar .list.open{
+        opacity: 1;
+        visibility: visible;
+    }
+     #navbar .list  .link{
+        flex-direction: column;
+    }
+     #navbar .list .img{
+        display: block;
+        background-color:#E8F8F9 ;
+        text-align: center;
+        padding: 40px 0 20px;
+    }
+     #navbar .list .nav_list{
+        background: #fff;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        transition: 1s;
+        transition: 0.5s;
+
+    }
+     #navbar .list .nav_list.open_nav{
+        left: 0;
+    }
+     #navbar .list .sm_icon{
+        display: block;
+    }
+     #navbar .nav_item .link{
+        gap: 0px;
+    }
+    #navbar .nav_item .link .link_item{
+        /* margin-bottom: 20px; */
+        border-bottom: 1px solid black;
+    }
+     #navbar .nav_item .link .link_item a{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+     #navbar .nav_item .link a .fa-chevron-down{
+        transform: rotate(-90deg);
+        transition: 0.5s;
+    }
+     #navbar .nav_item .link .link_item:hover .fa-chevron-down{
+        transform: rotate(0deg);
+    }
+     #navbar .icon{
+        display: none;
+    }
+     #navbar .menu{
+    display: block;
+}
+ #navbar .list .nav_item .close_btn{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+/*<========= drop down ===========>*/
+#navbar .list .link .dorp_down{
+    display: block;
+    position: initial;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+
+}
+#navbar .list .link .click-icon{
+    display: flex;
+    align-items: center;
+}
+#navbar .list .link .click-icon i{
+    transform: rotate(90deg) translateY(10px);
+    padding: 10px;
+    width: 40px;
+    height: 38px;
+    border:1px solid #cecece;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s;
+
+}
+#navbar .list .link .first-drop-down:hover .dorp_down{
+    /* display: block; */
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+    width: 100%;
+}
+#navbar .list .link .dorp_down ul::after{
+
+    display: none;
+
+}#navbar .list .link .dorp_down ul li{
+    margin-top: 0;
+}
+#navbar .list .link .dorp_down ul li::after{
+    display: none;
+}
+#navbar .list .link .dorp_down ul li::before{
+    display: none;
+}
+.upper_btn{
+    display: none;
+}
+    /*<========= section seven ===========>*/
+    #section_saven{
+        margin: 85px 0;
+
+        background: #F1F3F4;;
+    }
+    #section_saven .row {
+        flex-direction: column-reverse;
+    }
+    footer .container .footer_header_section{
+        position: initial;
+        margin: auto;
+    }
+    /*<=========  about page section four ===========>*/
+
+
+    #about-section-four .img-half{
+        position: relative;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #about-section-four .header-text{
+        margin-top: 55px;
+    }
+    #about-section-four .container .row .content{
+        width: 100%;
+    }
+    
+    .table::-webkit-scrollbar{
+        display: block;
+        
+    }
+    #total-section .container .total-count th{
+        padding: 20px 100px 20px 20px;
+        border: 1px solid #ccc;
+        background-color: #E0E0E0;
+    }
+    #total-section .container .total-count td{
+        border: 1px solid #ccc;
+        padding: 22px 200px 22px 25px;
+    }
+}
+/*<========= title ===========>*/
+/*<=========navbar end ===========>*/
+
+
+/*<========= footer ===========>*/
+/*<========= img section start ===========>*/
+@media screen and (max-width: 760px){
+    #blog-main-section{
+        margin-top: 30px;
+    }
+    #total-section .container .total-count th{
+        padding: 20px 50px 20px 20px;
+        border: 1px solid #ccc;
+        background-color: #E0E0E0;
+    }
+    #total-section .container .total-count td{
+        border: 1px solid #ccc;
+        padding: 22px 85px 22px 25px;
+        background-color: red
+    }
+}
+@media screen and (max-width: 980px) {
+    /*<========= header section ===========>*/
+    #tob_bar{
+        background: var(--hover-color);
+        color: var(--comon-colot);
+        padding: 11px 0;
+        display: none;
+    }
+    #home_page_img_section .container .row .right-img {
+        margin-top: 24px;
+    }
+    /*<========= section 6 ===========>*/
+    /*<========= section 7 ===========>*/
+    #section_saven  .row .left-colum{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 517px;
+        background:#F1F3F4;
+        align-items: center;
+        padding-right: 100px;
+    }
+    /*<========= checkout section order sy ===========>*/
+    #order-section .container .system .order-sy{
+        background-color: #E0E0E0;
+        padding: 12px 20px 12px 20px;
+        border:1px solid #c0bebe;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 1200px){
+    #section_six .container .row .offer_banner{
+        height: 485px;
+        padding: 35px 40px;
+        margin:0 0 0 0;
+    }
+}
+/* inc-dec button  */
+@media screen and (max-width: 1350px){
+    .table-tow button{
+        border: 1px solid #ccd;
+        padding: 5px 20px ;
+    }
+}
+    /* table wishlist */
+    #wishlist-main-section .container ::-webkit-scrollbar{
+        display: none;
+    }
+/*<========= footer section start ===========>*/
+@media screen and (max-width: 768px) {
+    
+    footer .container .footer_header_section .child{
+        border: none;
+        
+    }
+    #section_six .container .row .offer_banner{
+        padding: 20px;
+    }
+    /*<========= about page ===========>*/
+    #about-section-six .container  .prev-arrow{
+        display: none;
+    }
+    #about-section-six .container  .next-arrow{
+        display: none;
+    }
+    #wishlist-main-section .container ::-webkit-scrollbar{
+        display: none;
+    }
+}
+/*===============================>
+#about page section start
+===============================>*/
+/*<========= about shop page start ===========>*/
+@media  screen and (max-width: 980px){
+    #about-shop-section .container{
+        background: url(../img/BG.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding:  0;
+    }
+    /*<========= about page ===========>*/
+    #about-section-saven .container .pop{
+        display: none;
+    }
+    /*<========= table ===========>*/
+    #wishlist-main-section .container ::-webkit-scrollbar{
+        display: none;
+    }
+    #wishlist-main-section .container table th {
+        display: none;
+        border: none;
+    }
+    #wishlist-main-section .container table th:nth-child(2) {
+        color: #000000;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+}
+@media  screen and (max-width: 1220px) {
+    #about-shop-section .container .row .right {
+        padding: 0 50px;
+    }
+    #about-shop-section .container .row .ani{
+        display: none;
+    }
+}
+
+
+#wishlist-main-section{
+    margin-top: 100px;
+}
+/* #wishlist-main-section .container  table th{
+    width: 100%;
+} */
+/* .scroll-bar-table{
+    overflow-x: scroll;
+}
+ .scroll-bar-table::-webkit-scrollbar{
+    display: none;
+    background-color: #ccc;
+    height: 10px;
+
+}  */
+@media screen and (max-width:1200px){
+    #wishlist-main-section .container  table  .td-tow{
+        display: flex;
+        align-items: center;
+        /* margin-right: 20px; */
+        padding-right: 20px ;
+    }
+    #wishlist-main-section .container  table  .td-four{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:1000px){
+
+    #wishlist-main-section .container  table tbody td{
+        display: block;
+        text-align: center;
+    }  
+    #wishlist-main-section .container .scroll-bar-table{
+        margin-top: -100px;
+    }
+    #wishlist-main-section .container  table tbody .td-one{
+
+        border: 1px solid #ccc;
+    }
+    #wishlist-main-section .container  table tbody .td-tow{
+        border: 1px solid #ccc;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        border: 1px solid #ccc;
+
+    }
+      #wishlist-main-section .container  table tbody{
+        display: flex;
+        flex-direction: column;
+    }
+    #wishlist-main-section .container  table  .td-three{
+        padding: 30px;
+        border: 1px solid #ccc;
+    }
+    #wishlist-main-section .container  table  .td-four{
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+    #wishlist-main-section .container  table  .td-button{
+        padding: 30px;
+        border: 1px solid #ccc;
+    }
+    /* table  */
+    #wishlist-main-section .container table th{
+        width: 100%;
+    }
+    #wishlist-main-section .container table th:nth-child(2) {
+        color: #000000;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+    }
+    #wishlist-main-section .container table th {
+        display: none;
+        border: none;
+    }
+    }
+/*<========= about shop page end ===========>*/
+
+/*===============================>
+#about page section end
+===============================>*/
+/*===============================>
+#responsive part end
+===============================>*/
